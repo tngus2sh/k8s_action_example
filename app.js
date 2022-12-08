@@ -25,7 +25,7 @@ var router = express.Router();
 app.use('/', homeRouter);
 
 app.get('/write', function(req,res){
-    res.sendFile(__dirname + '../public/html/write.html');
+    res.sendFile('./public/html/write.html');
 });
 
 // app.use('/img', express.static(path.join(__dirname, 'public', 'img')));
