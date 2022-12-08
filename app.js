@@ -24,6 +24,10 @@ var router = express.Router();
 // homeRouter 연결
 app.use('/', homeRouter);
 
+app.get('/write', function(req,res){
+    res.sendFile(__dirname + '/write.html');
+});
+
 // app.use('/img', express.static(path.join(__dirname, 'public', 'img')));
 
 app.all('*', function(req, res){
